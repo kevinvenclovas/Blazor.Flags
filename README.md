@@ -1,4 +1,4 @@
-# Blazor.FLags
+# Blazor.Flags
 Add easy country flags to your blazor project.
 Inspired by [vue-country-flag](vue-country-flag) ❤️
 
