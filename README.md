@@ -4,6 +4,9 @@ Inspired by [vue-country-flag](vue-country-flag) ❤️
 
 Easy to use for Blazor Server and Blazor WebAssembly
 
+[![Nuget version](https://img.shields.io/nuget/v/Blazor.Flags?color=ff4081&label=nuget%20version&logo=nuget&style=flat-square)](https://www.nuget.org/packages/Blazor.Flags/)
+[![Nuget downloads](https://img.shields.io/nuget/dt/Blazor.Flags?color=ff4081&label=nuget%20downloads&logo=nuget&style=flat-square)](https://www.nuget.org/packages/Blazor.Flags/)
+
 ## Installation
 
 Install nuget
