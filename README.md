@@ -7,7 +7,10 @@ Easy to use for Blazor Server and Blazor WebAssembly
 ## Installation
 
 Install nuget
-Coming soon
+```
+Install-Package Blazor.Flags -Version 1.0.0
+```
+
 
 Add using to your _Imports.razor file
 ```
