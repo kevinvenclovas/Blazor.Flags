@@ -4,6 +4,11 @@
     <TargetFramework>net5.0</TargetFramework>
     <Authors>Kevin Venclovas</Authors>
     <Description>Add easy Country Flags to your Blazor Plugin</Description>
+    <PackageProjectUrl>https://github.com/kevinvenclovas/Blazor.Flags</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kevinvenclovas/Blazor.Flags</RepositoryUrl>
+    <RepositoryType>Blazor Country Flags</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +23,13 @@
     <Content Update="wwwroot\flags.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
