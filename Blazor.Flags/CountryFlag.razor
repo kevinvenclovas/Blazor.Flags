@@ -3,7 +3,13 @@
 @code {
 
     [Parameter]
+    public InputType InputType { get; set; }
+
+    [Parameter]
     public Country Country { get; set; }
+
+    [Parameter]
+    public string ISOA2 { get; set; }
 
     [Parameter]
     public bool IsRounded { get; set; }
@@ -32,7 +38,7 @@
             if (!string.IsNullOrEmpty(Background))
                 return $"background-image: url(\"{Background}\");";
             else
-                 return $"background-image: url(\"_content/Blazor.Flags/flags.png\");"; 
+                return $"background-image: url(\"_content/Blazor.Flags/flags.png\");"; 
         }
     }
 
@@ -41,7 +47,19 @@
     {
         get
         {
-            var country = this.Country.ToString().ToLower().Replace("_", "-");
+            string country = null;
+
+            if(InputType == InputType.ISOA2)
+            {
+                country = this.ISOA2.ToLower().Replace("_", "-");
+            }
+            else
+            {
+                country = this.Country.ToString().ToLower().Replace("_", "-");
+                
+            }
+            // Workarround for andora flag https://github.com/P3trur0/vue-country-flag/issues/34
+            country = country.Equals("ad") ? "and" : country;
             return $"f-{country}";
         }
     }

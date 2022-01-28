@@ -1,7 +1,14 @@
 ﻿using System.ComponentModel;
+using System.Reflection;
 
 namespace Blazor.Flags
 {
+    public enum InputType
+    {
+        Country = 0,
+        ISOA2 = 1,
+    }
+
     public enum FlagSize
     {
         Normal = 0,
@@ -272,4 +279,5 @@ namespace Blazor.Flags
         [Description("Scotland")] GB_SCT = 255,
         [Description("United Nations")] UN = 256,
     }
+
 }
