@@ -23,6 +23,12 @@ Add using to your _Imports.razor file
 @using Blazor.Flags
 ```
 
+If your project name ends with .Blazor you need to import Blazor.Flags with global
+```
+@using global::Blazor.Flags
+```
+
+
 **Only on Blazor Server you need to add css to your _Host.cshtml file**
 ```
 <link href="_content/Blazor.Flags/flags.css" rel="stylesheet" />
